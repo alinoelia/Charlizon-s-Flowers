@@ -227,20 +227,243 @@ header .bx-menu {
     font-size: 1rem;
 }
 
+.productos .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.productos .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.productos .box-container .box .descuento {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 2rem;
+    color: #F7418F;
+    background: rgba(255, 51, 153, 0.15);
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.productos .box-container .box .imagen {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.productos .box-container .box .imagen img {
+    height: 25rem;
+}
+
+.productos .box-container .box:hover .imagen img {
+    transform: scale(1.1);
+}
+
+.productos .box-container .box .imagen .icons {
+    position: relative;
+    bottom: 0rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.productos .box-container .box .imagen .icons a {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: #D2649A;
+    color: #FFEECC;
+}
+
+.productos .box-container .box .imagen .icons .bxs-shopping-bag {
+    border-left: 0.1rem solid #fff7;
+    border-right: 0.1rem solid #fff7;
+    width: 98%;
+}
+
+.productos .box-container .box .imagen .icons a:hover {
+    background: #6A1E55;
+}
 
 
+.productos .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
+}
 
+.productos .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
 
+.productos .box-container .box .content .precio {
+    font-size: 2.5rem;
+    color: #D2649A;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
 
+.productos .box-container .box .content .precio span{
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
 
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
 
+.review .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0.1rem solid rgba(0, 0, 0, .1);
+}
 
+.review .box-container .box .bxs-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: #eee;
+}
 
+.review .box-container .box .stars i{
+    color: #D2649A;
+    font-size: 2rem;
+}
 
+.review .box-container .box p{
+    color: #999;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
 
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
 
+.review .box-container .box .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
 
+.review .box-container .box .user h3 {
+    font-size: 2rem;
+    color: #333;
+}
 
+.review .box-container .box .user span{
+    font-size: 1.5rem;
+    color: #999;
+}
+
+.contacto .row {
+    display: flex;
+    flex-wrap: wrap-reverse ;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contacto .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 4.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    border: 0.1rem solid rgba(0, 0, 0, .1);
+    background: #FFEECC;
+    border-radius: .5rem;
+}
+
+.contacto .row .imagen {
+    flex: 1 1 40rem;
+}
+
+.contacto .row .imagen img {
+    width: 100%;
+}
+
+.contacto .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 0.1rem solid rgba(0, 0, 0, .1);
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+    width: 100%;
+}
+
+.contacto .row form .box:focus {
+    border-color: #D2649A;
+}
+
+.contacto .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: #D2649A;
+    text-decoration: underline;
+}
+
+.footer .credito {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: 0.1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credito span {
+    color: #D2649A;
+}
 
 
 
